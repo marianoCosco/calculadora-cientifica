@@ -5,7 +5,7 @@ const App = () => {
     <div>
       <h1 className="App">
         <Calculator />
-        <p>
+        <p className="developer">
           proyecto de <span>Mariano Cosco</span>
         </p>
       </h1>
