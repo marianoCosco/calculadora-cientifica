@@ -24,6 +24,7 @@ const KeysWindow = ({ handleButton }) => {
     "DEL",
     "AC",
     "=",
+    "%",
   ];
 
   return (
@@ -41,7 +42,7 @@ const KeysWindow = ({ handleButton }) => {
           <button
             key={index}
             className={`${item >= "0" && item <= "9" ? "number" : ""} ${
-              item === "=" && "equal"
+              item === "=" ? "equal" : ""
             }`}
             onClick={() => handleButton(item)}
           >
