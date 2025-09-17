@@ -29,12 +29,23 @@ const KeysWindow = () => {
     <div className="keysWindow">
       <div className="keys_scientific">
         {sciKeys.map((item, index) => (
-          <button key={index}>{item}</button>
+          <button key={index} onClick={() => handleButton(item)}>
+            {item}
+          </button>
         ))}
       </div>
+      <div className="line"></div>
       <div className="keys_basic">
         {basicKeys.map((item, index) => (
-          <button key={index}>{item}</button>
+          <button
+            key={index}
+            className={`${item >= "0" && item <= "9" ? "number" : ""} ${
+              item === "=" && "equal"
+            }`}
+            onClick={() => handleButton(item)}
+          >
+            {item}
+          </button>
         ))}
       </div>
     </div>
