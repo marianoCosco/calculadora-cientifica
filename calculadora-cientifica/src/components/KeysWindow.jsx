@@ -1,6 +1,6 @@
 import React from "react";
 
-const KeysWindow = () => {
+const KeysWindow = ({ handleButton }) => {
   const sciKeys = ["sin", "cos", "ln", "log", "tan", "π", "e", "^", "!", "√"];
 
   const basicKeys = [
@@ -25,6 +25,7 @@ const KeysWindow = () => {
     "AC",
     "=",
   ];
+
   return (
     <div className="keysWindow">
       <div className="keys_scientific">
