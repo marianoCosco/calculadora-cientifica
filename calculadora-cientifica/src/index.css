@@ -116,3 +116,23 @@ body {
   color: white;
   font-weight: 600;
 }
+
+@media (max-width: 610px) {
+  body {
+    padding: 1rem;
+  }
+
+  .keysWindow {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .keys_scientific {
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
